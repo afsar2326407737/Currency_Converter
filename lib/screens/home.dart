@@ -44,14 +44,19 @@ class _HomeState extends State<Home> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text("Currency Converter"),
+        backgroundColor: Colors.black,
+        title: const Text("Currency Converter",
+        style: TextStyle(
+          fontSize: 30,
+          color: Colors.white,
+        ),
+        ),
       ),
       body: Container(
         height: h,
         width: w,
         padding: EdgeInsets.all(10),
         decoration: BoxDecoration(
-
         ),
         child: SingleChildScrollView(
           child: Form(

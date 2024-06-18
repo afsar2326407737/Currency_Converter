@@ -83,24 +83,25 @@ class _UsdToAnyState extends State<UsdToAny> {
                             dropdownValue)+' '+dropdownValue;
                       });
                     },
-                    child: Text('Converted'),
-                    style: ButtonStyle(
-                      backgroundColor: MaterialStateProperty.all(
-                        Theme.of(context).primaryColor
-                      )
+                    child: Text('Converted',style: TextStyle(
+                      fontSize: 19,
+                      color: Colors.white
+                    ),
+                    ),
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.black,
                     ),
                   ),
                 ),
                 SizedBox(width: 10,),
               ],
             ),
-
             //Final Out Put
             SizedBox(height: 10,),
             Container(child: Text(answer,style: TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 20,
-              color: Colors.pink
+              color: Colors.black
             ),
             ),
             )

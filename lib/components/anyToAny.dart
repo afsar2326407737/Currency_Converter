@@ -124,19 +124,27 @@ class _AnyToAnyState extends State<AnyToAny> {
                     dropdownValue2;
                   });
                 },
-                child: Text('Convert'),
-                style: ButtonStyle(
-                  backgroundColor: MaterialStateProperty.all(
-                    Theme.of(context).primaryColor
-                  )
-                ),
+                child: Text('Convert',style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 20,
+                ),),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.black,
+                )
               ),
             ),
             SizedBox(
               width: 10,
             ),
             SizedBox(height: 10,),
-            Container(child: Text(answer),)
+            Container(child: Text(answer ,
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              fontSize: 20,
+              color: Colors.black
+            ),
+            ),
+            )
           ],
         ),
       ),
