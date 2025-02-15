@@ -1,11 +1,11 @@
 import 'dart:async';
 
-import 'package:currency_converter/models/allcurrencies.dart';
 import 'package:currency_converter/models/ratesmodel.dart';
 import 'package:flutter/material.dart';
 import '../components/anyToAny.dart';
 import '../components/usdToAny.dart';
 import '../functions/fetchrates.dart';
+
 class Home extends StatefulWidget {
   const Home({super.key});
 
